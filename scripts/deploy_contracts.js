@@ -5,16 +5,16 @@ const BigNumber = require("bignumber.js");
 async function main() {
   const [deployer] = await hre.ethers.getSigners();
   const deployerAddress = await deployer.getAddress();
-  console.log('Deploying SBCToken, TokenStaking contract with address:', deployerAddress);
+  console.log('Deploying WakaToken, TokenStaking contract with address:', deployerAddress);
 
-  // const SBCToken = await hre.ethers.getContractFactory("SBCToken");
+  // const WakaToken = await hre.ethers.getContractFactory("WakaToken");
   // const TokenStaking = await hre.ethers.getContractFactory("TokenStaking");
 
-  // const sbcToken = await (await SBCToken.deploy()).deployed();
-  // console.log('SBCToken contract deployed at', sbcToken.address);
+  // const WakaToken = await (await WakaToken.deploy()).deployed();
+  // console.log('WakaToken contract deployed at', WakaToken.address);
 
-  // const sbcPerBlock = new BigNumber(7).multipliedBy(10**16).toFixed(0);
-  // const tokenStaking = await TokenStaking.deploy(sbcToken.address, 26400000, sbcPerBlock);
+  // const WakaPerBlock = new BigNumber(7).multipliedBy(10**16).toFixed(0);
+  // const tokenStaking = await TokenStaking.deploy(WakaToken.address, 26400000, WakaPerBlock);
   // console.log('TokenStaking contract deployed at', tokenStaking.address);
 
 
