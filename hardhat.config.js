@@ -34,7 +34,7 @@ module.exports = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://explorer.matic.network/
-    apiKey: process.env.MATICSCAN_API_KEY
+    apiKey: process.env.POLYGON_KEY
   },
 
   paths: {
@@ -59,6 +59,11 @@ module.exports = {
       url: `https://bsc-dataseed.binance.org/`,
       chainId: 56,
       
+      accounts: [`0x${PRIVATE_KEY}`]
+    },
+    rinkeby: {
+      url: `https://eth-rinkeby.alchemyapi.io/v2/nXTtoXZd49GQtRbsze7zOtdVbw3LaBmE`,
+      chainId: 4,
       accounts: [`0x${PRIVATE_KEY}`]
     },
 
